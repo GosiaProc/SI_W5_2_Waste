@@ -1,20 +1,31 @@
 #include "Dustbin.h"
 #include <iostream>
 
-int i = 0;
-void Dustbin::throwOutGarbage(Garbage smiec)
-{
-	houseWasteContent[0] = smiec;
-	}
 
-void Dustbin::throwOutPaperGarbage(PaperGarbage pg) {
-	if(pg.isSqueeze)
-	paperContent[0] = pg;
+void Dustbin::throwOutGarbage(Garbage* smiec)
+{
+	houseWasteContent.push_back(smiec);
+}
+
+void Dustbin::throwOutPaperGarbage(PaperGarbage* pg) {
+	if (pg->isSqueeze)
+		paperContent.push_back(pg);
+	else
+		throw DustbinContentError();
 }
 	
-void Dustbin::throwOutPlasicGarbage(PlasticGarbage pl)
+void Dustbin::throwOutPlasicGarbage(PlasticGarbage* pl)
 {
-	if (pl.isClean == 1)
-		plasticContent[0] = pl;
+	if (pl->isClean == 1)
+		plasticContent.push_back(pl);
+	else
+		throw DustbinContentError();
+}
+
+void Dustbin::emptyContents()
+{
+	paperContent.clear();
+	plasticContent.clear();
+	houseWasteContent.clear();
 }
 

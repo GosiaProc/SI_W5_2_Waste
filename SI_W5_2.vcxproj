@@ -127,17 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BottleCap.cpp" />
+    <ClCompile Include="BottleCapException.cpp" />
     <ClCompile Include="Dustbin.cpp" />
+    <ClCompile Include="Dustbin9000.cpp" />
     <ClCompile Include="DustbinContentErrror.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Garbage.cpp" />
+    <ClCompile Include="MetalGarbage.cpp" />
     <ClCompile Include="PaperGarbage.cpp" />
     <ClCompile Include="PlasticGarbage.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BottleCap.h" />
+    <ClInclude Include="BottleCapException.h" />
     <ClInclude Include="Dustbin.h" />
+    <ClInclude Include="Dustbin9000.h" />
     <ClInclude Include="DustbinContentErrror.h" />
     <ClInclude Include="Garbage.h" />
+    <ClInclude Include="MetalGarbage.h" />
     <ClInclude Include="PaperGarbage.h" />
     <ClInclude Include="PlasticGarbage.h" />
   </ItemGroup>

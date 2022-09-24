@@ -33,6 +33,18 @@
     <ClCompile Include="DustbinContentErrror.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Dustbin9000.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetalGarbage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BottleCap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BottleCapException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Garbage.h">
@@ -48,6 +60,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DustbinContentErrror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dustbin9000.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetalGarbage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BottleCap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BottleCapException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

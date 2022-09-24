@@ -1,5 +1,7 @@
 #pragma once
-class DustbinContentErrror
+#include <exception>
+
+class DustbinContentErrror : public std::exception 
 {
 };
 

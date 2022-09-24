@@ -2,15 +2,17 @@
 #include <string>
 #include "PaperGarbage.h"
 #include "PlasticGarbage.h"
+#include <vector>
 
 
 class Dustbin {
 public:
 	string color;
-	PaperGarbage paperContent[10];
-	PlasticGarbage plasticContent[10];
-	Garbage houseWasteContent[10];
-	void throwOutGarbage(Garbage);
-	void throwOutPaperGarbage(PaperGarbage);
-	void throwOutPlasicGarbage(PlasticGarbage);
+	std::vector<PaperGarbage*> paperContent;
+	std::vector<PlasticGarbage*> plasticContent;
+	std::vector<Garbage*> houseWasteContent;
+	void throwOutGarbage(Garbage*);
+	void throwOutPaperGarbage(PaperGarbage*);
+	void throwOutPlasicGarbage(PlasticGarbage*);
+	void emptyContents();
 };
